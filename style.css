@@ -201,10 +201,6 @@ i {
         font-size: 10rem;
     }
 
-    .ig_img {
-        /* max-width: 55rem; */
-    }
-
     .container {
         padding-inline: 10rem;
         
@@ -223,10 +219,6 @@ i {
     .title {
         font-size: 10rem;
         padding-block: 8rem;
-    }
-
-    .ig_img {
-        /* max-width: 90rem; */
     }
 
     .container {
@@ -248,10 +240,6 @@ i {
     .title {
         font-size: 10rem;
         padding-block: 8rem;
-    }
-
-    .ig_img {
-        /* max-width: 70rem; */
     }
 
     .container {
