@@ -60,6 +60,30 @@ html, body {
     animation: letras 1200ms ease-out 1 400ms forwards;
 }
 
+.arrow {
+    transform: scale(10);
+    position: absolute;
+    bottom: 5vh;
+    animation: arrow 1.5s ease-out infinite ;
+}
+
+@keyframes arrow {
+    0% {
+        bottom: 5vh;
+    }
+
+    25% {
+        bottom: 4vh;
+    }
+
+    50% {
+        bottom: 6vh
+    }
+
+    100% {
+        bottom: 5vh;
+    }
+}
 
 @keyframes letras {
     to{
