@@ -1,0 +1,250 @@
+html, body {
+    font-family: 'Playfair Display', serif;
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    margin: 0;
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 2rem;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-clip: padding-box;
+    border: 0.5rem solid rgba(255, 0, 0, 0);
+  }
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 3rem;
+  	background: rgba(0, 0, 0, 0.7);
+    background-clip: padding-box;
+    border: 0.5rem solid rgba(255, 0, 0, 0);
+  }
+
+* {
+    transition: all 300ms;
+}
+
+/* ==============
+   ==== HERO ====  
+   ============== */
+
+.hero_bg {
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    place-content: center;
+    place-items: center;
+    background: url(images/gradient_bg.png);
+    background-position: top;
+}
+
+.imagotipo {
+    width: 17rem;
+    filter: brightness(500%);
+    opacity: 0;
+    transform: translateY(20rem);
+    animation: letras 1200ms ease-out 1 400ms forwards;
+}
+
+.logotipo {
+    width: 50rem;
+    filter: brightness(500%);
+    opacity: 0;
+    transform: translateY(20rem);
+    animation: letras 1200ms ease-out 1 400ms forwards;
+}
+
+@keyframes letras {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+/* =================
+   ==== CONTENT ====  
+   ================= */
+
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding-inline: 20rem;
+    padding-bottom: 6rem;
+}
+
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-size: 14rem;
+    font-weight: 100;
+    padding-block: 4rem;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+span {
+    display: block;
+    font-size: 8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+
+.feed {
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 15rem;
+    align-content: space-between;
+}
+
+.ig_img {
+    max-width: 60rem;
+}
+
+.ig_img:hover{
+    transform: scale(1.1);
+}
+
+/* =================
+   ==== FOOTER ===== 
+   ================= */
+
+.footer {
+    height: fit-content;
+    background: url(images/gradient_bg.png);
+    background-size: cover;
+    background-position: top;
+    color: white;
+    text-align: center;
+    padding-block: 3rem 1rem;
+}
+
+.footer_title {
+    font-size: 7rem;
+    font-weight: 400;
+}
+
+.social {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    margin: 0;
+    padding-inline: 5rem;
+    color: white;
+    margin-bottom: 6rem;
+    text-decoration: underline;
+}
+
+.social:hover {
+    transform: scale(1.05);
+}
+
+i {
+    padding-inline: 1rem;
+    color: white;
+}
+
+
+.copy {
+    font-size: 2.2rem;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (min-width: 950px) and (max-width: 1300px) {
+    html, body {
+        font-size: 45%;
+    }
+
+    .feed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 11rem;
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 950px) {
+    html, body {
+        font-size: 35%;
+    }
+
+    .feed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 10rem;
+    }
+
+    .container {
+        padding-inline: 10rem;
+        
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 700px) {
+    html, body {
+        font-size: 25%;
+    }
+
+    .feed {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 10rem;
+        padding-block: 8rem;
+    }
+
+    .container {
+        
+        padding-inline: 10rem;
+        
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+    html, body {
+        font-size: 20%;
+    }
+
+    .feed {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 10rem;
+        padding-block: 8rem;
+    }
+
+    .container {
+        
+        padding-inline: 10rem;
+        
+    }
+}
